@@ -107,6 +107,8 @@ get.Comtrade(r="528", p="0,170,320,360, 458", ps="2020",
 After we retrieve the data we want it the form of a standard R data frame. The following code gives the desired results:
 
 ```{r}
+# If you are not using Git, then you'll have to uncomment the following line
+# source(paste0(insert-comtrade-function-raw.R))
 source("ComTrade_Function.R")
 library(rjson)
 A <- get.Comtrade(r="528", p="0, 170, 320, 360, 458", ps="2020", 
