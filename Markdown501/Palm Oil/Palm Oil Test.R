@@ -1,11 +1,12 @@
 # https://comtrade.un.org/data/Doc/api/ex/r
 # https://data.library.virginia.edu/getting-un-comtrade-data-with-r/
 
+pacman::p_load(here, rjson)
 rm(list = ls())
 #setwd("C:/Users/Jim/Dropbox/Git/Markdown501/Palm Oil")
-setwd("C:/Users/vercamme/Dropbox/Git/Markdown501/Palm Oil") 
-source("ComTrade_Function.R")
-library(rjson)
+#setwd("C:/Users/vercamme/Dropbox/Git/Markdown501/Palm Oil") 
+source(here("Markdown501", "Palm Oil", "ComTrade_Function.R"))
+
 
 # Extract annual imports (rg=1) of palm oil (cc = 151110) in .csv format for most recent year (ps=2020)
 # for reporter (r) (Netherlands=528) and partners (p):
